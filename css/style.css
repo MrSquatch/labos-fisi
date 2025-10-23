@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 0 10%;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+main * {
+  border: 2px solid black;
+}
+
+main div {
+  padding: 10px;
+  font-size: 20px;
+}
+
+#titulo {
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 20px;
+}
+
+#titulo * {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.frente {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+
+.frente #profesor:hover,
+#pantalla:hover {
+  cursor: pointer;
+}
+
+.frente > :not(#profesor):not(#pantalla) {
+  border: 0;
+}
+
+.pcs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0;
+  border: 0;
+}
+
+.columna {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.columna div:hover {
+  cursor: pointer;
+}
+
+.activo {
+  background-color: lightgreen;
+}
+
+#generar {
+  cursor: pointer;
+}
