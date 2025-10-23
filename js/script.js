@@ -133,7 +133,7 @@ botonGenerar.addEventListener('click', async () => {
   if (gen_url.length === 0) {
     alert('Seleccione un equipo como minimo');
   } else {
-    gen_url = 'https://netlify.labos-fisi/?cod=' + labPab + labNum + gen_url;
+    gen_url = 'https://labos-fisi.netlify.app/?cod=' + labPab + labNum + gen_url;
     console.log(gen_url);
 
     try {
@@ -145,3 +145,4 @@ botonGenerar.addEventListener('click', async () => {
     }
   }
 });
+
